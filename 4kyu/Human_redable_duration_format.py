@@ -56,4 +56,4 @@ def format_duration(seconds):
         time_string = ", ".join(time_units[:-1]) + " and " + time_units[-1]
     else:
         time_string = time_units[0]
-    return time_string
+    return time_string if len(time_string) > 0 else 'now'
