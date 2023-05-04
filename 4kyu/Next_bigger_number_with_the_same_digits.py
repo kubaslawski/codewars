@@ -11,7 +11,6 @@ If the digits can't be rearranged to form a bigger number, return -1 (or nil in 
 531 ==> -1
 """
 
-import itertools
 def next_bigger(n):
     digits = list(str(n))
     for i in range(len(digits) -2, -1, -1):
