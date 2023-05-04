@@ -14,13 +14,4 @@ result = 3 (3 red pairs)
 """
 
 def number_of_pairs(gloves):
-    pairs = 0
-    dct = {}
-    for x in gloves:
-        if x in dct:
-            dct[x] += 1
-        else:
-            dct[x] = 1
-    for key, value in dct.items():
-        pairs += value // 2
-    return pairs
+    return sum(value // 2 for value in {x: gloves.count(x) for x in gloves}.values())
