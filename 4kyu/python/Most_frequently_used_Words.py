@@ -26,7 +26,6 @@ Bonus points (not really, but just for fun):
 Avoid creating an array whose memory footprint is roughly as big as the input text.
 Avoid sorting the entire array of unique words.
 """
-import re
 from collections import Counter
 
 def split_text(text):
